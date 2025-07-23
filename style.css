@@ -18,6 +18,38 @@
     border: none;
 
 }
+/* animation */
+@keyframes banner-animation{
+    0%{
+        opacity: 0;
+        transform: translate(-20x);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translate(-10x);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0x);
+
+    }
+}
+@keyframes banner-player-animation{
+    0%{
+        opacity: 0;
+        transform: translate(-20x);
+    }
+    50%{
+        opacity: 0.7;
+        transform: translate(-10x);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0x);
+
+    }
+}
+/* banner  */
 .banner{
     display: flex;
     align-items: center;
@@ -25,7 +57,7 @@
     color: white;
     border-radius: 15px;
     margin: 50px auto;
-   
+   animation: banner-animation 1s ease-out forwards;
 }
 .banner-left{
     padding: 45px;
@@ -47,6 +79,7 @@
 }
 .banner-right img{
     display: block;
+    animation: banner-player-animation 1s ease-in infinite;
 }
 img {
     max-width: 100%;
